@@ -1,7 +1,7 @@
 package bastawesy.patterns.factory.factorymethod.stores.imp;
 
-import bastawesy.patterns.factory.abstractfactory.factories.impl.NYPizzaIngredientFactory;
 import bastawesy.patterns.enums.PizzaType;
+import bastawesy.patterns.factory.abstractfactory.factories.impl.NYPizzaIngredientFactory;
 import bastawesy.patterns.factory.factorymethod.stores.PizzaStore;
 import bastawesy.patterns.factory.pizza.Pizza;
 import bastawesy.patterns.factory.pizza.imp.NYStylePizza.NYStyleCheesePizza;
@@ -18,6 +18,7 @@ public class NYStylePizzaStore extends PizzaStore {
     @Override
     public Pizza createPizza(PizzaType pizzaType) {
         Pizza pizza = null;
+        // creating factory
         NYPizzaIngredientFactory nyPizzaIngredientFactory = new NYPizzaIngredientFactory();
         if (pizzaType.equals(PizzaType.CHEESE)) {
             pizza = new NYStyleCheesePizza(nyPizzaIngredientFactory);
