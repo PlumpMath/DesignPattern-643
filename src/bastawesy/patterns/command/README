@@ -1,0 +1,7 @@
+
+
+The Command Pattern :
+    Allow you to decouple the requester of an action from the object that actually performs the action .
+
+The command object :
+    Encapsulates a request to do something on a specific object .
