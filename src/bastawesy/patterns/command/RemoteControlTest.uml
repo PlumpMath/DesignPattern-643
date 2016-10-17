@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>bastawesy.patterns.command.client.RemoteControlTest</OriginalElement>
+  <nodes>
+    <node x="366.5" y="84.0">bastawesy.patterns.command.invoker.SimpleRemoteControl</node>
+    <node x="96.10714285714288" y="168.0">bastawesy.patterns.command.client.RemoteControlTest</node>
+    <node x="10.5" y="84.0">bastawesy.patterns.command.commandobject.impl.LightOnCommand</node>
+    <node x="187.5" y="84.0">bastawesy.patterns.command.commandobject.impl.LightOffCommand</node>
+    <node x="254.25" y="0.0">bastawesy.patterns.command.commandobject.Command</node>
+    <node x="34.535714285714306" y="0.0">bastawesy.patterns.command.receiver.Light</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bastawesy.patterns.command.commandobject.impl.LightOffCommand" target="bastawesy.patterns.command.commandobject.Command">
+      <point x="39.75" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.client.RemoteControlTest" target="bastawesy.patterns.command.commandobject.impl.LightOffCommand">
+      <point x="20.5" y="-17.0" />
+      <point x="198.6071428571429" y="138.0" />
+      <point x="267.0" y="138.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.commandobject.impl.LightOnCommand" target="bastawesy.patterns.command.receiver.Light">
+      <point x="-39.25" y="-17.0" />
+      <point x="49.75" y="64.0" />
+      <point x="69.0357142857143" y="64.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.commandobject.impl.LightOffCommand" target="bastawesy.patterns.command.receiver.Light">
+      <point x="-39.75" y="-17.0" />
+      <point x="227.25" y="54.0" />
+      <point x="92.0357142857143" y="54.0" />
+      <point x="23.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.client.RemoteControlTest" target="bastawesy.patterns.command.invoker.SimpleRemoteControl">
+      <point x="61.5" y="-17.0" />
+      <point x="239.6071428571429" y="148.0" />
+      <point x="458.0" y="148.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.client.RemoteControlTest" target="bastawesy.patterns.command.commandobject.impl.LightOnCommand">
+      <point x="-20.5" y="-17.0" />
+      <point x="157.6071428571429" y="138.0" />
+      <point x="89.0" y="138.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.commandobject.impl.LightOnCommand" target="bastawesy.patterns.command.commandobject.Command">
+      <point x="39.25" y="-17.0" />
+      <point x="128.25" y="64.0" />
+      <point x="271.75" y="64.0" />
+      <point x="-35.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.invoker.SimpleRemoteControl" target="bastawesy.patterns.command.commandobject.Command">
+      <point x="0.0" y="-17.0" />
+      <point x="458.0" y="64.0" />
+      <point x="341.75" y="64.0" />
+      <point x="35.0" y="17.0" />
+    </edge>
+    <edge source="bastawesy.patterns.command.client.RemoteControlTest" target="bastawesy.patterns.command.receiver.Light">
+      <point x="-61.5" y="-17.0" />
+      <point x="116.60714285714288" y="148.0" />
+      <point x="0.0" y="148.0" />
+      <point x="0.0" y="54.0" />
+      <point x="46.035714285714306" y="54.0" />
+      <point x="-23.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="275.0" y="101.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

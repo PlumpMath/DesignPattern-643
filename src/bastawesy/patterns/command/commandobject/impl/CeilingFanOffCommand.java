@@ -1,0 +1,26 @@
+package bastawesy.patterns.command.commandobject.impl;
+
+import bastawesy.patterns.command.commandobject.Command;
+import bastawesy.patterns.command.receiver.CeilingFan;
+
+/**
+ * Created by ahmed.bastawesy on 10/16/2016.
+ */
+public class CeilingFanOffCommand implements Command {
+
+    CeilingFan ceilingFan;
+
+    public CeilingFanOffCommand(CeilingFan ceilingFan) {
+        this.ceilingFan = ceilingFan;
+    }
+
+    @Override
+    public void execute() {
+        ceilingFan.off();
+    }
+
+    @Override
+    public void unDo() {
+        ceilingFan.on();
+    }
+}

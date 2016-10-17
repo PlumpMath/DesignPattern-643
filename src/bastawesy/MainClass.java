@@ -1,6 +1,7 @@
 package bastawesy;
 
 
+import bastawesy.patterns.command.client.RemoteControlLoader;
 import bastawesy.patterns.enums.PizzaType;
 import bastawesy.patterns.factory.factorymethod.stores.PizzaStore;
 import bastawesy.patterns.factory.factorymethod.stores.imp.ChicagoStylePizzaStore;
@@ -10,14 +11,21 @@ import bastawesy.patterns.singleton.Singleton;
 
 /**
  * Created by ahmed.bastawesy on 8/23/2016.
+ * <p>
+ * Main class to test calling each implemented design pattern in this project
+ * </p>
  */
 public class MainClass {
 
     public static void main(String[] args) {
 //        callFactory();
-        callSingleton();
+//        callSingleton();
+        callCommand();
     }
 
+    /**
+     * simulate calling the Factory pattern
+     */
     private static void callFactory() {
         PizzaStore nYPizzaStore;
         PizzaStore chicagoPizzaStore;
@@ -34,7 +42,25 @@ public class MainClass {
     }
 
 
-    private static void callSingleton(){
+    /**
+     * simulate Calling the Singleton pattern
+     */
+    private static void callSingleton() {
         Singleton instance = Singleton.getInstanceAttempt1();
+    }
+
+
+    /**
+     * simulates calling the Command pattern
+     */
+    private static void callCommand() {
+
+        /** creates client object */
+//        RemoteControlTest remoteControlTest = new RemoteControlTest();
+//        /** performs the required actions */
+//        remoteControlTest.onButtonClick();
+
+        RemoteControlLoader remoteControlLoader = new RemoteControlLoader();
+        remoteControlLoader.load();
     }
 }

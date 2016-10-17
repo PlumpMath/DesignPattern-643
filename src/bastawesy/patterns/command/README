@@ -1,7 +1,25 @@
 
 
 The Command Pattern :
-    Allow you to decouple the requester of an action from the object that actually performs the action .
+    Allow you to decouple the requester of an action from the object that actually performs the action.
 
-The command object :
-    Encapsulates a request to do something on a specific object .
+
+The CLIENT object (RemoteControlTest) ;
+    create the required command object and passes it to the invoker object by calling the setCommand() method of
+    the current invoker.
+
+
+The COMMAND object (LightOnCommand, LightOffCommand) :
+    Encapsulates a request to do something on a specific object (receiver object).
+    It implements the command interface which contains execute() method whose implementation will contain
+    the actions to be performed on the receiver.
+
+
+The RECEIVER object (Light) :
+    provide the needed actions to be called from the command object.
+
+
+The INVOKER object (SimpleRemoteControl) :
+    contains setCommand() method which simply set a given command object to the current command object.
+    It also used the current command object to execute required actions by calling execute() method of
+    current command object.
